@@ -1,2 +1,3 @@
 # NAT_GSOC2025
-A rundown of my milestones on GSOC
+**Organization:** NetBSD
+**Project:** Enhancing Support for NAT64 Protocol Translation in NetBSD

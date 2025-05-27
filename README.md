@@ -5,7 +5,8 @@
 
 ## Community Bonding Period(May 8th - June 2nd)
 
-**Intro to NetBSD**
+### Intro to NetBSD
+
 NetBSD is a portable Unix operating system in common use. It is a free and opensource OS that runs on a broad variety of platforms from modern desktop systems, handheld devices to high end servers. it was written in C and belongs to the family of BSDs.
 
 ### NAT64(Network) and NPF(NetBSD Packet Filters)

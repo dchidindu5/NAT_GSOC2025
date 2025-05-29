@@ -17,7 +17,7 @@ NetBSD is a portable Unix operating system in common use. It is a free and opens
 
 In a nutshell, NAT64 is a transition mechanism from IPv6 to IPv4. it enables IPv6-only clients to communicate with IPv4-only servers. The aim of NAT64 is to translate an IPv6 address packets into IPv4 packets by modifying Network address info in the IP header of packets as it interacts to ipv4 servers and viceversa.
 
-[NPF](https://www.netbsd.org/~rmind/pub/npf_presentation_netbsd_6.pdf)known as NetBSD packet filter is a layer 3 packet filter that provides support for **stateful packet inspection**, **NAT, IPv6 and TCP/IP traffic filtering**. Although it's capability extends beyond that.
+[NPF](https://www.netbsd.org/~rmind/pub/npf_presentation_netbsd_6.pdf) known as NetBSD packet filter is a layer 3 packet filter that provides support for **stateful packet inspection**, **NAT, IPv6 and TCP/IP traffic filtering**. Although it's capability extends beyond that.
 Originally inspired by the Berkeley Packet Filter ([BPF](https://man.netbsd.org/bpfjit.4)), NPF uses its own n-code. It consists of CISC-like instructions for the common patterns to reduce the processing overhead.
 
 ---

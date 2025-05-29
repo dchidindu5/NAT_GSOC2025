@@ -10,6 +10,14 @@
 
 NetBSD is a portable Unix operating system in common use. It is a free and opensource OS that runs on a broad variety of platforms from modern desktop systems, handheld devices to high end servers. it was written in C and belongs to the family of BSDs.
 
+### Building Toolchain on NetBSD
+
+Let's assume Netbsd source have been cloned from GitHub
+
+- On the terminal enter" `cd /usr/src` and press "enter" This is likely the directory where netbsd source is located.
+- Enter ` ./build.sh -U -j1 -m amd64 -M /usr/obj -T /usr/tools tools `
+
+
 ### NAT64(Network) and NPF(NetBSD Packet Filters)
 
  > Note that NPF already supports IPv4 NAT (NAPT) and static IPv6 prefix translation (NPTv6), but lacks IPv6-to-IPv4 translation.

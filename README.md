@@ -17,7 +17,6 @@ Let's assume Netbsd source have been cloned from GitHub
 - On the terminal enter" `cd /usr/src` and press "enter" This is likely the directory where netbsd source is located.
 - Enter ` ./build.sh -U -j1 -m amd64 -M /usr/obj -T /usr/tools tools `
 
-
 ### NAT64(Network) and NPF(NetBSD Packet Filters)
 
  > Note that NPF already supports IPv4 NAT (NAPT) and static IPv6 prefix translation (NPTv6), but lacks IPv6-to-IPv4 translation.
@@ -27,6 +26,12 @@ In a nutshell, NAT64 is a transition mechanism from IPv6 to IPv4. it enables IPv
 
 [NPF](https://www.netbsd.org/~rmind/pub/npf_presentation_netbsd_6.pdf) known as NetBSD packet filter is a layer 3 packet filter that provides support for **stateful packet inspection**, **NAT, IPv6 and TCP/IP traffic filtering**. Although it's capability extends beyond that.
 Originally inspired by the Berkeley Packet Filter ([BPF](https://man.netbsd.org/bpfjit.4)), NPF uses its own n-code. It consists of CISC-like instructions for the common patterns to reduce the processing overhead.
+
+### IPv4 and IPv6
+
+IPv4 is a **32bit numeric address** written as four sets of numbers seperated by dots. It's made up of four sets of 8 bits binary called **Octet**. Each set has a range from 0 -255. Also known to have two main parts, the network address and a host address.
+
+IPv6 is a **128bit hexdecimal address** written as eight(8) sets of numbers seperated by colons(:). It's made up of 8 sets of 16 bits called **Hextets**
 
 ---
 

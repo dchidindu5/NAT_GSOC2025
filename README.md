@@ -14,6 +14,8 @@ NetBSD is a portable Unix operating system in common use. It is a free and opens
 
 Let's assume Netbsd source have been cloned from GitHub
 
+- Make multiple directories where the build files will reside `mkdir -p /usr/obj /usr/tools`
+followed by this `chown $(whoami) /usr/obj /usr/tools`
 - On the terminal enter" `cd /usr/src` and press "enter" This is likely the directory where netbsd source is located.
 - Enter ` ./build.sh -U -j1 -m amd64 -M /usr/obj -T /usr/tools tools `
 

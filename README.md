@@ -31,9 +31,13 @@ Originally inspired by the Berkeley Packet Filter ([BPF](https://man.netbsd.org/
 
 ### IPv4 and IPv6
 
-IPv4 is a **32bit numeric address** written as four sets of numbers seperated by dots. It's made up of four sets of 8 bits binary called **Octet**. Each set has a range from 0 -255. Also known to have two main parts, the network address and a host address.
+IPv4 is a **32bit numeric address** written as four sets of numbers seperated by dots. It's made up of four sets of 8 bits binary called **Octet**. Each set has a range from 0 -255. Also known to have two main parts, the network address and a host address. e.g `10.22.34.0`
 
-IPv6 is a **128bit hexdecimal address** written as eight(8) sets of numbers seperated by colons(:). It's made up of 8 sets of 16 bits called **Hextets**
+IPv6 is a **128bit hexdecimal address** written as eight(8) sets of numbers seperated by colons(:). It's made up of 8 sets of 16 bits called **Hextets**.e.g `2001:0db8:0000:0000:aa11....`
+
+## Coding Period(June 2nd - Sept.)
+
+Coming soon!!
 
 ---
 

@@ -17,7 +17,7 @@ Let's assume Netbsd source have been cloned from GitHub
 - Make multiple directories where the build files will reside `mkdir -p /usr/obj /usr/tools`
 followed by this `chown $(whoami) /usr/obj /usr/tools`
 - On the terminal enter" `cd /usr/src` This is likely the directory where netbsd source is located.
-- Enter ` ./build.sh -U -j1 -m amd64 -M /usr/obj -T /usr/tools tools `
+- Enter ` ./build.sh -U -j2 -m amd64 -M /usr/obj -T /usr/tools tools `
 
 ### NAT64(Network) and NPF(NetBSD Packet Filters)
 

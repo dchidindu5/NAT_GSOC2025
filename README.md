@@ -19,6 +19,11 @@ followed by this `chown $(whoami) /usr/obj /usr/tools`
 - On the terminal enter" `cd /usr/src` This is likely the directory where netbsd source is located.
 - Enter ` ./build.sh -U -j2 -m amd64 -M /usr/obj -T /usr/tools tools `
 
+### Building Kernel on NetBSD
+
+- ```cd /usr/src```
+- ```./build.sh -U -j2 -m amd64 -M /usr/obj -T /usr/tools kernel=MYKERNEL```
+
 ### NAT64(Network) and NPF(NetBSD Packet Filters)
 
  > Note that NPF already supports IPv4 NAT (NAPT) and static IPv6 prefix translation (NPTv6), but lacks IPv6-to-IPv4 translation.

@@ -7,12 +7,12 @@
 The goal of the NAT64 project is to implement IPv6-to-IPv4 translation inside NetBSD’s NPF (NetBSD Packet Filter).
 NAT64 enables IPv6-only clients to communicate with IPv4-only servers by embedding/extracting IPv4 addresses in IPv6 addresses as per RFC 6052, RFC 6145).
 
-We are using a 1:1 mapping for now, to implement nat64 translation.
-Whereby an ipv6 host will use its ipv4 address to communicate with an ipv4 only server for e.g(Github).
-On the NPF, we will have a rule like this `map wm0 algo NAT64 ipv6-> ipv4`
-Invariably this means we want to use ipv4 to access the public internet in order to communicate with github’s ipv4 server.
-During this process, ipv6 header will be rewritten to ipv4. Part of the ip structure requires source and destination address so our new ipv4 source address will be the Host ipv4 address (which is likely to change during further improvement) and the ipv4 destination address will be gotten from github’s ipv4 embedded ipv6 address i.e the ipv4 address in it’s ipv6 address gotten from the queried server.
-When the packet is returning from github, it uses the ipv6 interface, so the ipv4 address part will be embedded back into its required position based on the prefix length passed by the user on the configuration. Then it will be sent to the ipv6 interface of the host machine.
+We are using a 1:1 mapping for now, to implement NAT64 translation.
+Whereby an IPv6 host will use its IPv4 address to communicate with an IPv4 only server for e.g(Github).
+On the NPF, we will have a rule like this `map wm0 algo NAT64 IPv6-> IPv4`
+Invariably this means we want to use IPv4 to access the public internet in order to communicate with GitHub’s IPv4 server.
+During this process, IPv6 header will be rewritten to IPv4. Part of the ip structure requires source and destination address so our new IPv4 source address will be the Host IPv4 address (which is likely to change during further improvement) and the IPv4 destination address will be gotten from GitHub’s IPv4 embedded IPv6 address i.e the IPv4 address in it’s IPv6 address gotten from the queried server.
+When the packet is returning from GitHub, it uses the IPv6 interface, so the IPv4 address part will be embedded back into its required position based on the prefix length passed by the user on the configuration. Then it will be sent to the IPv6 interface of the host machine.
 
 So far, I’ve been focusing on the core translation path, making sure headers are rewritten correctly and transport checksums are updated. This also requires changes in the Userland and Kernel.
 

@@ -4,7 +4,7 @@
 
 ## **Introduction & Description**
 
-The goal of the NAT64 project is to implement IPv6-to-IPv4 translation inside NetBSD’s NPF (NetBSD Packet Filter).
+The goal of the NAT64 project is to implement IPv6-to-IPv4 translation inside NPF (NetBSD Packet Filter).
 NAT64 enables IPv6-only clients to communicate with IPv4-only servers by embedding/extracting IPv4 addresses in IPv6 addresses as per RFC 6052, RFC 6145.
 
 We are using a 1:1 mapping for now, to implement NAT64 translation.

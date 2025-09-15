@@ -11,7 +11,6 @@ Whereby an IPv6 host will use its IPv4 address to communicate with an IPv4 only 
 In order to enable NAT64 on NPF we will have a rule like this:
 
 ```
-map wm0 algo "nat64" IPv6 -> IPv4
 map wm0 algo "nat64" 64:ff9b:2a4:: -> 192.0.2.33
 ```
 

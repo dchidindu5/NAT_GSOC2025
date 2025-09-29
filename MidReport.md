@@ -7,11 +7,10 @@
 The goal of the NAT64 project is to implement IPv6-to-IPv4 translation inside NPF (NetBSD Packet Filter).
 NAT64 enables IPv6-only clients to communicate with IPv4-only servers by embedding/extracting IPv4 addresses in IPv6 addresses as per RFC 6052 and RFC 6145.
 We are using a 1:1 mapping for now, to implement NAT64 translation.
-Whereby an IPv6 host will use its IPv4 address to communicate with an IPv4 only server. As an example of IPv4, we will use github.com(140.82.121.3) that supports only IPv4.
+Whereby an IPv6 host will use its IPv4 address to communicate with an IPv4 only server. As an example of IPv4, we will use github.com (140.82.121.3) that supports only IPv4.
 In order to enable NAT64 on NPF we will have a rule like this:
 
 ```
-map wm0 algo "nat64" IPv6 -> IPv4
 map wm0 algo "nat64" 64:ff9b:2a4:: -> 192.0.2.33
 ```
 
@@ -46,7 +45,7 @@ So far, I’ve been focusing on the core translation path, making sure headers a
 ### Debugging
 
 - Building kernel and userland via `build.sh` with kernel debug logs enabled
-- Tracing packet flow via `ktrace`
+- Tracing process flow via `ktrace`
 - Incremental testing/unit: Test functions one by one.
 
 ### Experience, Observation, Impressions

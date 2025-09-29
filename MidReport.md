@@ -45,7 +45,7 @@ So far, I’ve been focusing on the core translation path, making sure headers a
 ### Debugging
 
 - Building kernel and userland via `build.sh` with kernel debug logs enabled
-- Tracing packet flow via `ktrace`
+- Tracing process flow via `ktrace`
 - Incremental testing/unit: Test functions one by one.
 
 ### Experience, Observation, Impressions

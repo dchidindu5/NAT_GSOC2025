@@ -8,6 +8,7 @@
 ## Overview
 
 A typical rule looks like:
+
 `map wm0 algo "nat64" 64:ff9b:2a4:: -> 192.0.2.33`
 
 `map wm0 algo nat64 plen 96 64:ff9b::8c52:7903 <- 140.82.121.3`
@@ -49,4 +50,4 @@ This tells NPF to translate outgoing IPv6 packets using the prefix 64:ff9b:2a4::
 This project successfully integrates NAT64 along with a separate DNS64 configuration into NPF, enabling IPv6-only clients to reach IPv4-only servers through seamless translation.
 Although there's a need for additional changes and implementation.
 
-This is indeed the End of my GSOC Program, it was indeed a exciting moment working with system developers and certainly I'd be an active contributor to the NetBSD codebase.
+This is indeed the End of my GSOC Program, it was indeed an exciting moment working with system developers and certainly I'd be an active contributor to the NetBSD codebase.

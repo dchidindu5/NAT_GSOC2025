@@ -18,7 +18,9 @@ This tells NPF to translate outgoing IPv6 packets using the prefix 64:ff9b:2a4::
 **When an IPv6 packet from a client hits the NPF machine:**
 
 - The NAT64 translation routine (npf_nat64_rwrheader()) rewrites the IPv6 header to an IPv4 header.
+
      The source becomes the host’s IPv4 address or any pool of IPv4 addresses.
+     
      The destination becomes the IPv4 address of github extracted from IPv4 embedded IPv6 address defined in the rule configuration. (e.g. 140.82.121.3 from 64:ff9b::8c52:7903).
 
 - TCP/UDP/ICMP checksums are recalculated using in4_cksum() or in6_cksum().

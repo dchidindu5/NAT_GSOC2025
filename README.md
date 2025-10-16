@@ -7,11 +7,12 @@
 
 ## Overview
 
-A typical rule looks like:
+Typical rules looks like:
 
-`map wm0 algo "nat64" 64:ff9b:2a4:: -> 192.0.2.33`
-
-`map wm0 algo nat64 plen 96 64:ff9b::8c52:7903 <- 140.82.121.3`
+```
+map wm0 algo "nat64" 64:ff9b:2a4:: -> 192.0.2.33
+map wm0 algo nat64 plen 96 64:ff9b::8c52:7903 <- 140.82.121.3
+```
 
 This tells NPF to translate outgoing IPv6 packets using the prefix `64:ff9b:2a4::/96`, rewriting them to use the IPv4 address `192.0.2.33`. When the packet returns and hits NPF, it changes source from GitHub's IPv4 to GitHub's IPv6 address and then it rewrites the header.
 
